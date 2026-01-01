@@ -1,0 +1,4 @@
+# file: C:\Users\Chetan\Documents\ResQ_OS\src\database\db_operations.py
+# hypothesis_version: 6.148.9
+
+[1.5, 1.8, 2.0, 3.0, 5.0, 7.0, 10.0, 15.0, 25.0, 30.0, 50.0, 100.0, 500.0, 'Bangalore', 'Delhi', 'EMERGENCY_KIT', 'HOSPITAL', 'HOSP_001', 'India', 'Karnataka', 'Maharashtra', 'Mumbai', 'NGO', 'NGO_001', 'ORG_HOSPITAL_001', 'ORG_NGO_001', 'ORG_PDS_001', 'OXYGEN', 'PDS', 'PDS_001', 'RICE']
