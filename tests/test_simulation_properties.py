@@ -1,6 +1,6 @@
 """
 Property-based tests for simulation functionality
-Feature: resq-supply-chain
+Feature: inventoryq-supply-chain
 """
 import pytest
 from hypothesis import given, strategies as st
@@ -19,7 +19,7 @@ class TestSimulationProperties:
     def test_deterministic_simulation_reliability(self, city):
         """
         Property 3: Deterministic simulation reliability
-        Feature: resq-supply-chain, Property 3: Deterministic simulation reliability
+        Feature: inventoryq-supply-chain, Property 3: Deterministic simulation reliability
         **Validates: Requirements 2.1, 2.4, 5.1**
         
         For any city input to the simulation engine, querying the same city 
@@ -123,7 +123,7 @@ class TestSimulationProperties:
     def test_simulated_data_realism(self, city):
         """
         Property 10: Simulated data realism
-        Feature: resq-supply-chain, Property 10: Simulated data realism
+        Feature: inventoryq-supply-chain, Property 10: Simulated data realism
         **Validates: Requirements 5.2**
         
         For any simulated weather or traffic data, the generated values should 
@@ -231,7 +231,7 @@ class TestValidationViewProperties:
     def test_validation_view_completeness(self):
         """
         Property 8: Validation view completeness
-        Feature: resq-supply-chain, Property 8: Validation view completeness
+        Feature: inventoryq-supply-chain, Property 8: Validation view completeness
         **Validates: Requirements 4.1**
         
         For any major system feature, there should exist a corresponding validation view 

@@ -1,5 +1,5 @@
 """
-Snowflake-native Streamlit app for ResQ OS Simulation UDF validation
+Snowflake-native Streamlit app for InventoryQ OS Simulation UDF validation
 Designed to run within Snowflake using Streamlit in Snowflake (SiS)
 """
 import streamlit as st
@@ -9,18 +9,18 @@ from datetime import datetime
 
 # Page configuration
 st.set_page_config(
-    page_title="ResQ OS - Snowflake UDF Validation",
+    page_title="InventoryQ: Zero-Touch Inventory",
     page_icon="❄️",
     layout="wide"
 )
 
-st.title("❄️ ResQ OS - Snowflake UDF Validation")
+st.title("❄️ InventoryQ OS - Snowflake UDF Validation")
 st.markdown("**Test interface for Snowflake Python UDFs - Streamlit in Snowflake (SiS)**")
 
 # Database connection info
-st.sidebar.title("Database Context")
+st.sidebar.title("InventoryQ OS // v11.0")
 st.sidebar.info("""
-**Database:** RESQ_OS_DB  
+**Database:** INVENTORYQ_OS_DB  
 **Schema:** PUBLIC  
 **Warehouse:** COMPUTE_WH
 """)
@@ -45,7 +45,7 @@ with tab1:
         for city in cities:
             if st.button(f"Test {city}", key=f"weather_{city}"):
                 # SQL query to call UDF
-                query = f"SELECT RESQ_OS_DB.PUBLIC.get_weather_data('{city}') as weather_data;"
+                query = f"SELECT INVENTORYQ_OS_DB.PUBLIC.get_weather_data('{city}') as weather_data;"
                 
                 st.code(query, language="sql")
                 st.info(f"Execute this query in Snowflake to test {city} weather data")
@@ -80,9 +80,9 @@ with tab1:
         st.markdown("**Test Deterministic Behavior:**")
         deterministic_query = """
         SELECT 
-            RESQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as call1,
-            RESQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as call2,
-            RESQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as call3;
+            INVENTORYQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as call1,
+            INVENTORYQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as call2,
+            INVENTORYQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as call3;
         """
         
         if st.button("Show Deterministic Test Query"):
@@ -108,7 +108,7 @@ with tab2:
         
         for vendor, location, description in test_cases:
             if st.button(f"Test {vendor} in {location}", key=f"vendor_{vendor}_{location}"):
-                query = f"SELECT RESQ_OS_DB.PUBLIC.get_vendor_status('{vendor}', '{location}') as vendor_status;"
+                query = f"SELECT INVENTORYQ_OS_DB.PUBLIC.get_vendor_status('{vendor}', '{location}') as vendor_status;"
                 
                 st.code(query, language="sql")
                 st.info(description)
@@ -135,11 +135,11 @@ with tab2:
         coverage_query = """
         SELECT 
             'Zepto_Mumbai' as test_case,
-            RESQ_OS_DB.PUBLIC.get_vendor_status('Zepto', 'Mumbai') as result
+            INVENTORYQ_OS_DB.PUBLIC.get_vendor_status('Zepto', 'Mumbai') as result
         UNION ALL
         SELECT 
             'Zepto_Delhi' as test_case,
-            RESQ_OS_DB.PUBLIC.get_vendor_status('Zepto', 'Delhi') as result;
+            INVENTORYQ_OS_DB.PUBLIC.get_vendor_status('Zepto', 'Delhi') as result;
         """
         
         if st.button("Show Coverage Test Query"):
@@ -151,7 +151,7 @@ with tab3:
     
     st.markdown("**Generate Complete Simulation Data:**")
     
-    comprehensive_query = "SELECT RESQ_OS_DB.PUBLIC.generate_realistic_simulation() as simulation_data;"
+    comprehensive_query = "SELECT INVENTORYQ_OS_DB.PUBLIC.generate_realistic_simulation() as simulation_data;"
     
     if st.button("Show Comprehensive Test Query"):
         st.code(comprehensive_query, language="sql")
@@ -201,15 +201,15 @@ st.markdown("**Copy and paste these commands into Snowflake for quick testing:**
 
 quick_tests = [
     ("Set Context", """
-USE DATABASE RESQ_OS_DB;
+USE DATABASE INVENTORYQ_OS_DB;
 USE SCHEMA PUBLIC;
 USE WAREHOUSE COMPUTE_WH;
     """),
-    ("Test Bangalore Weather", "SELECT RESQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as bangalore_weather;"),
-    ("Test Delhi Weather", "SELECT RESQ_OS_DB.PUBLIC.get_weather_data('Delhi') as delhi_weather;"),
-    ("Test Blinkit Status", "SELECT RESQ_OS_DB.PUBLIC.get_vendor_status('Blinkit', 'Bangalore') as blinkit_status;"),
-    ("Test Dunzo Status", "SELECT RESQ_OS_DB.PUBLIC.get_vendor_status('Dunzo', 'Mumbai') as dunzo_status;"),
-    ("Full Simulation", "SELECT RESQ_OS_DB.PUBLIC.generate_realistic_simulation() as full_simulation;")
+    ("Test Bangalore Weather", "SELECT INVENTORYQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as bangalore_weather;"),
+    ("Test Delhi Weather", "SELECT INVENTORYQ_OS_DB.PUBLIC.get_weather_data('Delhi') as delhi_weather;"),
+    ("Test Blinkit Status", "SELECT INVENTORYQ_OS_DB.PUBLIC.get_vendor_status('Blinkit', 'Bangalore') as blinkit_status;"),
+    ("Test Dunzo Status", "SELECT INVENTORYQ_OS_DB.PUBLIC.get_vendor_status('Dunzo', 'Mumbai') as dunzo_status;"),
+    ("Full Simulation", "SELECT INVENTORYQ_OS_DB.PUBLIC.generate_realistic_simulation() as full_simulation;")
 ]
 
 for test_name, query in quick_tests:
@@ -232,7 +232,7 @@ with st.expander("How to deploy this app in Snowflake"):
     
     2. **Create Streamlit app** in Snowflake:
        ```sql
-       CREATE STREAMLIT resq_validation
+       CREATE STREAMLIT inventoryq_validation
        ROOT_LOCATION = '@my_stage'
        MAIN_FILE = 'snowflake_validation.py'
        QUERY_WAREHOUSE = COMPUTE_WH;
@@ -245,5 +245,5 @@ with st.expander("How to deploy this app in Snowflake"):
 
 # Footer
 st.markdown("---")
-st.markdown("**ResQ OS - Self-Healing Supply Chain** | Snowflake UDF Validation v1.0")
+st.markdown("**InventoryQ OS - Autonomous AI Inventory Operating System** | Snowflake UDF Validation v1.0")
 st.markdown("❄️ Designed for Streamlit in Snowflake (SiS)")

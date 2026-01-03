@@ -1,6 +1,6 @@
-# ResQ OS - Streamlit Validation Apps
+# InventoryQ OS - Streamlit Validation Apps
 
-This directory contains Streamlit applications for validating the ResQ OS high-fidelity simulation UDFs.
+This directory contains Streamlit applications for validating the InventoryQ OS high-fidelity simulation UDFs.
 
 ## Apps Overview
 
@@ -128,7 +128,7 @@ streamlit run src/streamlit_apps/validation_app.py
 
 ### Snowflake App Issues
 - **Function not found:** Ensure UDFs are deployed with correct names
-- **Wrong database:** Use `USE DATABASE RESQ_OS_DB; USE SCHEMA PUBLIC;`
+- **Wrong database:** Use `USE DATABASE INVENTORYQ_OS_DB; USE SCHEMA PUBLIC;`
 - **Permission errors:** Ensure proper warehouse and database access
 
 ## Quick Test Commands
@@ -136,20 +136,20 @@ streamlit run src/streamlit_apps/validation_app.py
 ### For Snowflake Testing
 ```sql
 -- Set context
-USE DATABASE RESQ_OS_DB;
+USE DATABASE INVENTORYQ_OS_DB;
 USE SCHEMA PUBLIC;
 USE WAREHOUSE COMPUTE_WH;
 
 -- Test weather
-SELECT RESQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as bangalore_weather;
-SELECT RESQ_OS_DB.PUBLIC.get_weather_data('Delhi') as delhi_weather;
+SELECT INVENTORYQ_OS_DB.PUBLIC.get_weather_data('Bangalore') as bangalore_weather;
+SELECT INVENTORYQ_OS_DB.PUBLIC.get_weather_data('Delhi') as delhi_weather;
 
 -- Test vendors
-SELECT RESQ_OS_DB.PUBLIC.get_vendor_status('Blinkit', 'Bangalore') as blinkit_status;
-SELECT RESQ_OS_DB.PUBLIC.get_vendor_status('Dunzo', 'Mumbai') as dunzo_status;
+SELECT INVENTORYQ_OS_DB.PUBLIC.get_vendor_status('Blinkit', 'Bangalore') as blinkit_status;
+SELECT INVENTORYQ_OS_DB.PUBLIC.get_vendor_status('Dunzo', 'Mumbai') as dunzo_status;
 
 -- Test comprehensive simulation
-SELECT RESQ_OS_DB.PUBLIC.generate_realistic_simulation() as full_simulation;
+SELECT INVENTORYQ_OS_DB.PUBLIC.generate_realistic_simulation() as full_simulation;
 ```
 
 ## Property-Based Test Integration
@@ -176,5 +176,5 @@ After validation testing is complete:
 
 ---
 
-**ResQ OS - Self-Healing Supply Chain**  
+**InventoryQ OS - Autonomous AI Inventory Operating System**  
 Validation Interface Documentation v1.0

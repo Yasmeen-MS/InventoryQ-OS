@@ -1,5 +1,5 @@
 """
-Data models for ResQ OS - Self-Healing Supply Chain
+Data models for InventoryQ OS - Autonomous AI Inventory Operating System
 """
 from dataclasses import dataclass
 from datetime import datetime

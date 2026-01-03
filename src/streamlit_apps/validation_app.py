@@ -1,5 +1,5 @@
 """
-Streamlit Validation App for ResQ OS Simulation UDFs
+Streamlit Validation App for InventoryQ OS Simulation UDFs
 Tests connectivity and functionality of high-fidelity simulation components
 """
 import streamlit as st
@@ -20,12 +20,12 @@ from udfs.simulation_udfs import (
 
 # Page configuration
 st.set_page_config(
-    page_title="ResQ OS - Simulation Validation",
+    page_title="InventoryQ: Zero-Touch Inventory",
     page_icon="🌦️",
     layout="wide"
 )
 
-st.title("🌦️ ResQ OS - High-Fidelity Simulation Validation")
+st.title("🌦️ InventoryQ OS - High-Fidelity Simulation Validation")
 st.markdown("**Test interface for validating simulation UDF connectivity and functionality**")
 
 # Sidebar for navigation
@@ -363,5 +363,5 @@ elif test_section == "Chaos Button Testing":
 
 # Footer
 st.markdown("---")
-st.markdown("**ResQ OS - Self-Healing Supply Chain** | Validation Interface v1.0")
+st.markdown("**InventoryQ OS - Autonomous AI Inventory Operating System** | Validation Interface v1.0")
 st.markdown("🔗 Testing high-fidelity simulation UDFs for consistent demo behavior")

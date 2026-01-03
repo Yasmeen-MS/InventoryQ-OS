@@ -6,7 +6,7 @@ ResQ OS is a Zero-Touch logistics system designed for the "AI for Good" hackatho
 
 ## Glossary
 
-- **ResQ_System**: The complete self-healing supply chain application
+- **InventoryQ_System**: The complete autonomous AI inventory operating system
 - **Multi_Tenant_Core**: Single database schema handling multiple organization types
 - **Simulation_Engine**: Deterministic high-fidelity simulation system providing realistic external data
 - **Python_Simulation_UDFs**: Snowflake Python UDFs that generate realistic simulation data
@@ -43,7 +43,7 @@ ResQ OS is a Zero-Touch logistics system designed for the "AI for Good" hackatho
 
 ### Requirement 3: Self-Healing Automation Engine
 
-**User Story:** As a supply chain manager, I want the system to automatically detect critical stock levels and generate purchase orders, so that stockouts are prevented without manual intervention.
+**User Story:** As an inventory manager, I want the system to automatically detect critical stock levels and generate purchase orders, so that stockouts are prevented without manual intervention.
 
 #### Acceptance Criteria
 

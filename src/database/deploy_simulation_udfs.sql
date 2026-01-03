@@ -1,5 +1,5 @@
 -- Deploy High-Fidelity Simulation UDFs to Snowflake
--- ResQ OS - Self-Healing Supply Chain
+-- InventoryQ OS - Autonomous AI Inventory Operating System
 
 -- Set database and warehouse context
 -- Note: Make sure you have created a database first, or replace with your database name

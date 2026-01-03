@@ -1,6 +1,6 @@
 """
 Property-based tests for multi-tenant functionality
-Feature: resq-supply-chain
+Feature: inventoryq-supply-chain
 """
 import pytest
 from hypothesis import given, strategies as st
@@ -55,7 +55,7 @@ class TestMultiTenantProperties:
     def test_multi_tenant_data_unification(self, inventory_items):
         """
         Property 1: Multi-tenant data unification
-        Feature: resq-supply-chain, Property 1: Multi-tenant data unification
+        Feature: inventoryq-supply-chain, Property 1: Multi-tenant data unification
         **Validates: Requirements 1.1, 1.2**
         
         For any combination of Hospital, PDS, and NGO inventory data, 
@@ -147,7 +147,7 @@ class TestMultiTenantProperties:
     def test_organization_data_isolation(self, inventory_items):
         """
         Property 2: Organization data isolation
-        Feature: resq-supply-chain, Property 2: Organization data isolation
+        Feature: inventoryq-supply-chain, Property 2: Organization data isolation
         **Validates: Requirements 1.3, 1.4**
         
         For any organization ID and inventory data, querying with that organization's 

@@ -1,2 +1,2 @@
-# ResQ OS - Self-Healing Supply Chain
+# InventoryQ OS - Autonomous AI Inventory Operating System
 # Main package initialization

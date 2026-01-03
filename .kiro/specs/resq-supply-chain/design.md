@@ -1,10 +1,10 @@
-# Design Document: ResQ OS - Self-Healing Supply Chain
+# Design Document: InventoryQ OS - Autonomous AI Inventory Operating System
 
 ## Overview
 
-ResQ OS is a Snowflake-native application that implements a zero-touch logistics system for critical supply chain management across three sectors: Hospitals (Oxygen), Public Distribution Systems (Rice), and NGOs (Emergency Kits). The system leverages deterministic high-fidelity simulation, predictive analytics, and automated procurement to prevent stockouts before they occur.
+InventoryQ OS is a Snowflake-native application that implements an autonomous AI inventory operating system for critical inventory management across three sectors: Hospitals (Oxygen), Public Distribution Systems (Rice), and NGOs (Emergency Kits). The system leverages deterministic high-fidelity simulation, predictive analytics, and automated procurement to prevent stockouts before they occur.
 
-The architecture uses Python Simulation UDFs within Snowflake to provide 99.99% realistic external data, ensuring consistent and reliable demo behavior while showcasing intelligent self-healing capabilities.
+The architecture uses Python Simulation UDFs within Snowflake to provide 99.99% realistic external data, ensuring consistent and reliable demo behavior while showcasing intelligent autonomous inventory capabilities.
 
 ## Architecture
 

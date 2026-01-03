@@ -1,9 +1,9 @@
--- ResQ OS - Snowflake Database Setup Script
+-- InventoryQ OS - Snowflake Database Setup Script
 -- Copy and paste this entire script into your Snowflake worksheet and run it
 
 -- Step 1: Create Database and Schema
-CREATE DATABASE IF NOT EXISTS RESQ_OS;
-USE DATABASE RESQ_OS;
+CREATE DATABASE IF NOT EXISTS INVENTORYQ_OS;
+USE DATABASE INVENTORYQ_OS;
 CREATE SCHEMA IF NOT EXISTS SUPPLY_CHAIN;
 USE SCHEMA SUPPLY_CHAIN;
 
@@ -385,6 +385,6 @@ SELECT 'Test 6: Sector Summary' as test_name;
 SELECT * FROM sector_summary_view;
 
 -- Success message
-SELECT 'ResQ OS Database Setup Complete!' as status,
-       'Database: RESQ_OS, Schema: SUPPLY_CHAIN' as location,
+SELECT 'InventoryQ OS Database Setup Complete!' as status,
+       'Database: INVENTORYQ_OS, Schema: SUPPLY_CHAIN' as location,
        'Ready for Streamlit integration' as next_step;

@@ -1,10 +1,11 @@
-# 🚀 ResQ OS - Self-Healing Supply Chain
+# 🚀 InventoryQ OS - Autonomous AI Inventory Operating System
 
 <div align="center">
 
-![ResQ OS Logo](https://img.shields.io/badge/ResQ%20OS-Self--Healing%20Supply%20Chain-2E86AB?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)
+![InventoryQ OS Logo](https://img.shields.io/badge/InventoryQ%20OS-Autonomous%20AI%20Inventory%20System-2E86AB?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)
 
-**🌟 Zero-Touch Logistics System for Critical Supply Chain Management 🌟**
+**🌟 Autonomous Inventory Health & Stockout Prevention System 🌟**
+*Powered by Self-Healing Supply Chain Automation*
 
 [![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com)
 [![AI for Good](https://img.shields.io/badge/AI%20for%20Good-Hackathon-gold?style=flat&logo=artificial-intelligence)](https://github.com)
@@ -78,7 +79,7 @@
 
 </div>
 
-**ResQ OS** is a **Snowflake-native application** that implements a zero-touch logistics system for critical supply chain management across three vital sectors. Our mission: **Eliminate stockouts through 99.99% reliable simulation, automated procurement, and real-time self-healing capabilities.**
+**InventoryQ OS** is a **Snowflake-native application** that implements an autonomous AI inventory operating system for critical inventory management across three vital sectors. Our mission: **Eliminate stockouts through 99.99% reliable simulation, automated procurement, and real-time inventory health monitoring.**
 
 ---
 
@@ -88,11 +89,11 @@
 <tr>
 <td width="50%">
 
-### 🧠 **Self-Healing Intelligence**
+### 🧠 **Autonomous Inventory Intelligence**
 - 🎯 **Automated Stockout Prediction** - 3-7 days advance warning
 - ⚡ **Zero-Touch Procurement** - Auto-generated purchase orders
 - 🏆 **Intelligent Prioritization** - Hospital > NGO > PDS urgency
-- 📊 **Real-time Monitoring** - Continuous inventory tracking
+- 📊 **Real-time Inventory Monitoring** - Continuous stock level tracking
 
 ### 🌦️ **High-Fidelity Simulation**
 - 🎲 **99.99% Realistic Data** - Deterministic demo behavior
@@ -109,10 +110,10 @@
 - 🤖 **Cortex AI Integration** - Advanced predictive analytics
 - 🖥️ **Streamlit in Snowflake** - Native web applications
 
-### 🔄 **Multi-Tenant Design**
+### 🔄 **Multi-Tenant Inventory Design**
 - 🗄️ **Unified Schema** - Single database, all sectors
 - 🔒 **Data Isolation** - Organization-level security
-- ⚙️ **Sector-Specific Logic** - Customized business rules
+- ⚙️ **Sector-Specific Logic** - Customized inventory rules
 - 📈 **Scalable Architecture** - Unlimited organizations
 
 </td>
@@ -146,7 +147,7 @@ graph TB
         J[🗄️ Multi-Tenant Database<br/>Unified Schema]
     end
     
-    subgraph "🔄 Self-Healing Engine"
+    subgraph "🔄 Autonomous Inventory Engine"
         K[📊 Stock Analysis<br/>Consumption Tracking]
         L[🔮 Prediction Engine<br/>Stockout Forecasting]
         M[🛒 Auto-Procurement<br/>Purchase Orders]
@@ -155,7 +156,7 @@ graph TB
     
     subgraph "💻 User Interfaces"
         O[🧪 Validation Dashboard<br/>Testing Interface]
-        P[📈 Production Dashboard<br/>Operations Center]
+        P[📈 Inventory Command Center<br/>Operations Center]
         Q[💥 Chaos Testing<br/>Scenario Simulation]
         R[📱 Real-time Monitoring<br/>Live Status]
     end
@@ -240,7 +241,7 @@ graph TB
 ### 2️⃣ **Database Setup**
 ```sql
 -- Snowflake Deployment
-USE DATABASE RESQ_OS_DB;
+USE DATABASE INVENTORYQ_OS_DB;
 USE SCHEMA PUBLIC;
 USE WAREHOUSE COMPUTE_WH;
 
@@ -282,7 +283,7 @@ python test_validation_app.py
 | 🏢 **Multi-Tenant** | 2 | ✅ PASSED | 100% |
 | 🎯 **Simulation** | 7 | ✅ PASSED | 99.99% |
 | 🧪 **Validation Views** | 3 | ✅ PASSED | 100% |
-| � **Inteogration** | 4 | ✅ PASSED | 100% |
+| 🔗 **Integration** | 4 | ✅ PASSED | 100% |
 | **TOTAL** | **16** | **✅ ALL PASSED** | **99.99%** |
 
 </div>
@@ -354,30 +355,41 @@ python -m pytest tests/ -v --cov=src --cov-report=html
 <div align="center">
 
 ```
-🏗️ ResQ_OS/
-├── 📋 .kiro/specs/resq-supply-chain/     # 📖 Complete Specifications
-│   ├── requirements.md                   # 📝 EARS-Compliant Requirements
-│   ├── design.md                        # 🏗️ System Architecture & Design
-│   └── tasks.md                         # 📋 Implementation Roadmap
+🏗️ InventoryQ_OS/
+├── 📋 .kiro/specs/inventoryq-supply-chain/  # 📖 Complete Specifications
+│   ├── requirements.md                      # 📝 EARS-Compliant Requirements
+│   ├── design.md                           # 🏗️ System Architecture & Design
+│   └── tasks.md                            # 📋 Implementation Roadmap
 ├── 🐍 src/                              # 💻 Source Code
 │   ├── 📊 models/
-│   │   └── data_models.py               # 🏗️ Core Data Models & Enums
+│   │   ├── data_models.py               # 🏗️ Core Data Models & Enums
+│   │   └── __init__.py                  # 📦 Package Initialization
 │   ├── 🗄️ database/
-│   │   ├── schema_production.sql        # 🏢 Multi-Tenant Database Schema
+│   │   ├── schema.sql                   # 🏢 Database Schema
+│   │   ├── schema_production.sql        # 🏭 Production Schema
+│   │   ├── schema_clean.sql             # 🧹 Clean Schema
+│   │   ├── schema_final.sql             # ✅ Final Schema
+│   │   ├── schema_minimal.sql           # 📦 Minimal Schema
 │   │   ├── deploy_simulation_udfs.sql   # ❄️ Snowflake UDF Deployment
-│   │   └── db_operations.py             # 🔧 Database Operations
+│   │   ├── db_operations.py             # 🔧 Database Operations
+│   │   └── __init__.py                  # 📦 Package Initialization
 │   ├── 🎯 udfs/
-│   │   └── simulation_udfs.py           # 🌦️ High-Fidelity Simulation Functions
-│   └── 🖥️ streamlit_apps/
-│       ├── validation_app.py            # 🧪 Local Testing Interface
-│       ├── snowflake_validation.py      # ❄️ Snowflake UDF Testing
-│       ├── production_dashboard.py      # 📈 Main Production Interface
-│       └── README.md                    # 📖 App Documentation
+│   │   ├── simulation_udfs.py           # 🌦️ High-Fidelity Simulation Functions
+│   │   └── __init__.py                  # 📦 Package Initialization
+│   ├── 🖥️ streamlit_apps/
+│   │   ├── validation_app.py            # 🧪 Local Testing Interface
+│   │   ├── snowflake_validation.py      # ❄️ Snowflake UDF Testing
+│   │   ├── README.md                    # 📖 App Documentation
+│   │   └── __init__.py                  # 📦 Package Initialization
+│   └── __init__.py                      # 📦 Package Initialization
 ├── 🧪 tests/                           # 🔬 Testing Suite
 │   ├── test_multi_tenant_properties.py  # 🏢 Multi-Tenant Property Tests
-│   └── test_simulation_properties.py    # 🎯 Simulation Property Tests
+│   ├── test_simulation_properties.py    # 🎯 Simulation Property Tests
+│   └── __init__.py                      # 📦 Package Initialization
 ├── 🚀 test_validation_app.py            # ⚡ Quick Test Runner
 ├── 📦 requirements.txt                  # 🐍 Python Dependencies
+├── 📄 snowflake_setup.sql               # ❄️ Snowflake Setup Script
+├── 🖥️ streamlit_app.py                  # 🎯 Main Streamlit Application
 └── 📖 README.md                         # 📚 This Documentation
 ```
 
@@ -539,8 +551,8 @@ python -m pytest --cov=src --cov-report=html
 ### ❄️ **Snowflake Deployment**
 ```sql
 -- Database Setup
-CREATE DATABASE IF NOT EXISTS RESQ_OS_DB;
-USE DATABASE RESQ_OS_DB;
+CREATE DATABASE IF NOT EXISTS INVENTORYQ_OS_DB;
+USE DATABASE INVENTORYQ_OS_DB;
 USE SCHEMA PUBLIC;
 USE WAREHOUSE COMPUTE_WH;
 
@@ -551,9 +563,9 @@ USE WAREHOUSE COMPUTE_WH;
 @src/database/deploy_simulation_udfs.sql
 
 -- Streamlit App Creation
-CREATE STREAMLIT resq_production_dashboard
+CREATE STREAMLIT inventoryq_validation_dashboard
 ROOT_LOCATION = '@my_stage'
-MAIN_FILE = 'production_dashboard.py'
+MAIN_FILE = 'validation_app.py'
 QUERY_WAREHOUSE = COMPUTE_WH;
 ```
 
@@ -574,7 +586,7 @@ QUERY_WAREHOUSE = COMPUTE_WH;
 
 <div align="center">
 
-### **Join the ResQ OS Community!**
+### **Join the InventoryQ OS Community!**
 
 [![Contributors Welcome](https://img.shields.io/badge/Contributors-Welcome-brightgreen?style=for-the-badge)](CONTRIBUTING.md)
 [![Good First Issues](https://img.shields.io/badge/Good%20First-Issues-blue?style=for-the-badge)](https://github.com/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
@@ -653,8 +665,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 <br><em>Amazing Tools & Libraries</em>
 </td>
 <td align="center" width="150">
-<img src="https://img.shields.io/badge/Supply%20Chain-Heroes-blue?style=for-the-badge&logo=truck" alt="Supply Chain"/>
-<br><strong>Supply Chain Heroes</strong>
+<img src="https://img.shields.io/badge/Inventory%20Management-Heroes-blue?style=for-the-badge&logo=warehouse" alt="Inventory Management"/>
+<br><strong>Inventory Management Heroes</strong>
 <br><em>Frontline Workers</em>
 </td>
 </tr>
@@ -668,11 +680,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 🌟 **Star this Repository!** 🌟
 
-**If ResQ OS helps prevent stockouts in your supply chain, please give us a star!**
+**If InventoryQ OS helps prevent stockouts in your inventory, please give us a star!**
 
-[![GitHub stars](https://img.shields.io/github/stars/username/ResQ_OS.svg?style=social&label=Star&maxAge=2592000)](https://github.com/username/ResQ_OS/stargazers/)
-[![GitHub forks](https://img.shields.io/github/forks/username/ResQ_OS.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/username/ResQ_OS/network/)
-[![GitHub watchers](https://img.shields.io/github/watchers/username/ResQ_OS.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/username/ResQ_OS/watchers/)
+[![GitHub stars](https://img.shields.io/github/stars/username/InventoryQ_OS.svg?style=social&label=Star&maxAge=2592000)](https://github.com/username/InventoryQ_OS/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/username/InventoryQ_OS.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/username/InventoryQ_OS/network/)
+[![GitHub watchers](https://img.shields.io/github/watchers/username/InventoryQ_OS.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/username/InventoryQ_OS/watchers/)
 
 ---
 
@@ -685,11 +697,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-### **💫 Built with ❤️ for Supply Chain Resilience**
+### **💫 Built with ❤️ for Inventory Resilience**
 
-**ResQ OS - Because every supply matters, and stockouts shouldn't happen.**
+**InventoryQ OS - Because every item matters, and stockouts shouldn't happen.**
 
-*Transforming supply chains through intelligent automation and predictive analytics*
+*Transforming inventory management through intelligent automation and predictive analytics*
 
 ---
 

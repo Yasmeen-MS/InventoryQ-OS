@@ -9,7 +9,7 @@ import os
 def run_validation_app():
     """Run the Streamlit validation app locally"""
     
-    print("🚀 Starting ResQ OS Validation App...")
+    print("🚀 Starting InventoryQ OS Validation App...")
     print("📍 Running locally on http://localhost:8501")
     print("🔗 This tests the Python UDF functions directly")
     print("❄️ For Snowflake UDF testing, use the Snowflake validation app")
@@ -35,7 +35,7 @@ def run_validation_app():
         print(f"❌ Error running validation app: {e}")
 
 if __name__ == "__main__":
-    print("ResQ OS - Validation App Test Runner")
+    print("InventoryQ OS - Validation App Test Runner")
     print("=" * 40)
     
     # Check if streamlit is installed
