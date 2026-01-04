@@ -1,12 +1,12 @@
--- ResQ OS Database Schema - PRODUCTION READY VERSION
+-- InventoryQ OS Database Schema - PRODUCTION READY VERSION
 -- Multi-tenant database schema for Hospitals, PDS, and NGOs
 -- Copy and paste this entire file into Snowflake worksheet and run
 
 -- Step 1: Create Database and Schema
-CREATE DATABASE IF NOT EXISTS RESQ_OS;
-USE DATABASE RESQ_OS;
-CREATE SCHEMA IF NOT EXISTS SUPPLY_CHAIN;
-USE SCHEMA SUPPLY_CHAIN;
+CREATE DATABASE IF NOT EXISTS INVENTORYQ_OS_DB;
+USE DATABASE INVENTORYQ_OS_DB;
+CREATE SCHEMA IF NOT EXISTS PUBLIC;
+USE SCHEMA PUBLIC;
 
 -- Step 2: Core inventory table supporting all sectors
 CREATE OR REPLACE TABLE inventory_master (
@@ -334,8 +334,8 @@ GROUP BY sector_type;
 
 -- Success message with system status
 SELECT 
-    'ResQ OS Production Database Setup Complete!' as status,
-    'Database: RESQ_OS, Schema: SUPPLY_CHAIN' as location,
+    'InventoryQ OS Production Database Setup Complete!' as status,
+    'Database: INVENTORYQ_OS_DB, Schema: PUBLIC' as location,
     'Full production features enabled' as features,
     COUNT(*) as total_inventory_items
 FROM inventory_master;

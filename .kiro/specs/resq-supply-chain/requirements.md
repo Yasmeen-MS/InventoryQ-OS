@@ -2,7 +2,7 @@
 
 ## Introduction
 
-ResQ OS is a Zero-Touch logistics system designed for the "AI for Good" hackathon. The system serves Hospitals, Public Distribution Systems (PDS), and NGOs by predicting stockouts and automatically ordering supplies using real-time data integration with Snowflake as the core platform.
+InventoryQ OS is a Zero-Touch autonomous logistics system that serves Hospitals, Public Distribution Systems (PDS), and NGOs by predicting stockouts and automatically ordering supplies using real-time data integration with Snowflake as the core platform. Developed by the InventoryQ OS Community, this enterprise-grade solution provides intelligent inventory management for critical supply chains.
 
 ## Glossary
 
@@ -67,7 +67,7 @@ ResQ OS is a Zero-Touch logistics system designed for the "AI for Good" hackatho
 
 ### Requirement 5: Deterministic Simulation Reliability
 
-**User Story:** As a hackathon presenter, I want the system to use deterministic simulation that guarantees consistent behavior during demonstrations, so that the demo showcases our core self-healing capabilities without any variability.
+**User Story:** As a system presenter, I want the system to use deterministic simulation that guarantees consistent behavior during demonstrations, so that the demo showcases our core self-healing capabilities without any variability.
 
 #### Acceptance Criteria
 
